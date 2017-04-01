@@ -71,7 +71,7 @@ class SiteController extends Controller
      * @return mixed
      */
     public function actionIndex()
-    {     
+    {
         return $this->render('index');
     }
 
@@ -183,11 +183,6 @@ class SiteController extends Controller
         return $this->render('requestPasswordResetToken', [
             'model' => $model,
         ]);
-    }
-
-    public function actionHello(){
-
-        return $this->render('hello');
     }
 
     /**

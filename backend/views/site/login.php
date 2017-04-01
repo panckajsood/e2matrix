@@ -11,22 +11,15 @@ $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
-    <!--<h1><?= Html::encode($this->title) ?></h1> -->
-    <div class = "login-box">
-       <div class = "login-logo">
-          <a href = ""><b>Admin</b>LTE</a>
-       </div>
-       <div  class = "login-box-body">
-          <p>Please fill out the following fields to login:</p>
-          <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+    <h1><?= Html::encode($this->title) ?></h1>
 
-                <?= $form->field($model, 'username',['options' =>[
-                    'tag' => 'div',
-                    'class' => 'form-group field-loginform-username has-feedback required'
-                    ],
-                    'template' =>'{input}<span class = "glyphicon glyphicon-user form-control-feedback"></span>
-                                  {error}{hint}'
-                ])->textInput(['autofocus' => true,'placeholder' => 'Username']) ?>
+    <p>Please fill out the following fields to login:</p>
+
+    <div class="row">
+        <div class="col-lg-5">
+            <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+
+                <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
 
                 <?= $form->field($model, 'password')->passwordInput() ?>
 
@@ -37,6 +30,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
 
             <?php ActiveForm::end(); ?>
-       </div>
+        </div>
     </div>
 </div>

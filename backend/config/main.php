@@ -25,18 +25,6 @@ return [
             // this is the name of the session cookie used for login on the backend
             'name' => 'advanced-backend',
         ],
-        'urlManager' => [
-        'class' => 'yii\web\UrlManager',
-        // Disable index.php
-        'showScriptName' => false,
-        // Disable r= routes
-        'enablePrettyUrl' => true,
-        'rules' => array(
-                '<controller:\w+>/<id:\d+>' => '<controller>/view',
-                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
-                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-        ),
-        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
