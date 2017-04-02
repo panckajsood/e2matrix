@@ -72,6 +72,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $this->layout = "main-site";
+        $this->view->title = 'E2 Matrix Online';
         return $this->render('index');
     }
 

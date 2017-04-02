@@ -205,7 +205,7 @@ class AssetManager extends Component
      */
     public function init()
     {
-        parent::init();
+        parent::init(); 
         $this->basePath = Yii::getAlias($this->basePath);
         if (!is_dir($this->basePath)) {
             throw new InvalidConfigException("The directory does not exist: {$this->basePath}");
