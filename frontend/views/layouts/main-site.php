@@ -70,12 +70,14 @@ if it's not present, don't show loader */
   </div>
 </nav>
 
-     <?= Breadcrumbs::widget([
+
+    <div>
+        <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
-    
+    </div>
 </div>
 
 <footer class="footer skin-light pad-tb-40">
