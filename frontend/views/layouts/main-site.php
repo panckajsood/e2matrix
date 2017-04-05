@@ -80,7 +80,7 @@ if it's not present, don't show loader */
     </div>
 </div>
 
-<footer class="footer skin-light pad-tb-40">
+<footer class="footer skin-light pad-t-60">
   <div class="container">
     <div class="promo-block">
             <div class="promo-text">Get in touch</div>
@@ -88,38 +88,52 @@ if it's not present, don't show loader */
     </div>
     <div class="pad-tb-20"></div>
     <div class="row" id="contact">
-        <div class="col-md-6 left">
-            <form method="post"><input type="hidden" name="form-name" value="form 1">
-                <input type="text" placeholder="Name*" required="">
-                <input type="email" placeholder="Email*" required="">
-                <textarea placeholder="Message*" required=""></textarea>
-                <input type="submit" value="send message">
-            </form>
+    
+    <div class="col-md-6 left ">
+        <form method="post"><input type="hidden" name="form-name" value="form 1">
+            <input type="text" placeholder="Name*" required="">
+            <input type="email" placeholder="Email*" required="">
+            <textarea placeholder="Message*" required=""></textarea>
+            <input type="submit" value="send message">
+        </form>
+    </div>
+    <div class="col-md-6 left ">
+        <div class="part address-container ">
+            
+            <h3 class="heading" style="background-position:bottom center"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Location</h3>
+            <ul>
+            <li>#6639, St.No.3, Guru Nanak Nagar, Daba Lohara Road, Ludhiana, India 141016</li>
+            <li> <br> <strong>Opening Hours</strong><br>
+            08:00 AM – 06:00 PM</li>
+            </ul>
         </div>
-            <div id="info" class="col-sm-6">
-        <div class="part-o col-sm-6">
+    </div>
+        
+    <div class="col-sm-12">
+    <div id="info" class="clearfix">
+        <div class="part-o col-sm-3">
+            <div class="part">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <p>Panckaj Sood</p>
+            </div>
+        </div>
+        <div class="part-o col-sm-3">
             <div class="part">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <p>+ 999 999 99</p>
+                <p>89683-37425, 96465-81420</p>
             </div>
         </div>
         
-        <div class="part-o col-sm-6">
+        <div class="part-o col-sm-3">
             <div class="part">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <p>name@mywebsite.com</p>
+                <p>pankaj.sood205@gmail.com</p>
             </div>
         </div>
         
-        <div class="part-o col-sm-6">
-            <div class="part">
-                <i class="fa fa-location-arrow" aria-hidden="true"></i>
-                <p>29 m.qodus street, shoubra, egypt</p>
-            </div>
-        </div>
-        
-        <div class="part-o col-sm-6">
-            <div class="part">
+    
+        <div class="part-o col-sm-3">
+            <div class="part ">
                 <h4>follow me</h4>
                 <div class="social-media">
                     <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -131,12 +145,20 @@ if it's not present, don't show loader */
             </div>
         </div>
     </div>
+    </div>
     
     </div>
     
-
   </div>
+
+ <div class="copyright_info pad-tb-40">
+<div class="container">
+<div class="text-center">&copy; 2017 E2Matrix Study Accademy. All Rights Reserved</div>
+</div>
+</div>
+
 </footer>
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 <?php $this->endBody() ?>
 </body>
 </html>
