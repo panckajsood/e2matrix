@@ -22,4 +22,4 @@ $('#back-to-top').click(function () {
             }, 800);
             return false;
     });
-$y('#back-to-top').tooltip('show');
+$('#back-to-top').tooltip('show');
