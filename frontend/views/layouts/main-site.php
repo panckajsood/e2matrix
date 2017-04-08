@@ -48,6 +48,7 @@ WebsiteAsset::register($this);
       <li><a href="#section-three">Our Achievers</a></li>
       <li><a href="#section-four">Testimonials</a></li-->
       <li><a href="#section-five">Contact Us</a></li>
+       <li><a href="<?= Url::to(['site/signup']) ?>">Signup</a></li>
     </ul>
     </div>
   </div>
