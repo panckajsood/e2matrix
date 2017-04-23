@@ -12,11 +12,15 @@ class AdminLtePluginAsset extends AssetBundle
         'morris/morris.min.js',
         'ckeditor/ckeditor.js',
         'knob/jquery.knob.js',
+        'daterangepicker/daterangepicker.js',
+        'datepicker/bootstrap-datepicker.js',
         // more plugin Js here
     ];
     public $css = [
         'datatables/dataTables.bootstrap.css',
         'morris/morris.css',
+        'daterangepicker/daterangepicker.css',
+        'datepicker/datepicker3.css',
         // more plugin CSS here
     ];
     public $depends = [
