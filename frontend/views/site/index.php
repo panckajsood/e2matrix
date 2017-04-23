@@ -4,114 +4,125 @@
 
 $this->title = 'E2 Matrix Online';
 ?>
- <div class="clearfix" style=""></div>
- <div class="targetdiv" id="home"></div> 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="<?= yii\helpers\Url::to('@web/frontend/web/images/banner1.jpg')?>">
-      </div>
-
-      <div class="item">
-        <img src="<?= yii\helpers\Url::to('@web/frontend/web/images/banner2.jpg')?>">
-      </div>
-
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-   </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  
+<div class="targetdiv" id="home"></div> 
+<div class="bannerhome text-center">
+	<div class="container">
+                <h1><span id="hi">hi, </span><span id="name">Welcome to</span></h1>
+                <h2><span id="job">E2matrix Study Accademy</span></h2>
+                <div class="buttons">
+                    <button id="b1" style="opacity: 1;">Login/Register</button>
+                    <button id="b2" data-target="#section-five" class="scrollTodiv" style="opacity: 1;">Contact Us</button>
+                </div>
+               
+                <div class="down">
+                    <a data-target="#section-one" class="scrollTodiv"><i id="down-icon" class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                </div>
+         </div>
+</div>
+<div class="clearfix" style=""></div> 
+ 
 <div class="targetdiv" id="section-one"></div>
-<section class="about pad-tb-30" >
+<section class="about pad-tb-60" >
   <div class="container">
-        <div class="promo-block">
-            <div class="promo-text">About us</div>
-            <div class="center-line"></div>
-        </div>
-        <div class="text-center pad-t-20">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
+		<div class="promo-block">
+			<div class="promo-text">Why us</div>
+			<div class="center-line"></div>
+		</div>
+		<div class="text-center pad-t-20">
+<div class="about-holder row  col-sm-10 col-sm-offset-1">
+	<div class="about col-sm-4 pad-tb-20">
+		<div class="icon-box"><img src="<?= yii\helpers\Url::to('@web/frontend/web/images/great_teacher_icon.svg')?>" /></div>
+		<h4 class="name">Great Teachers</h4>
+		<p class="detail">Handpicked and trained to provide quality teaching</p>
+	</div>
+	<div class="about col-sm-4 pad-tb-20">
+		<div class="icon-box"><img src="<?= yii\helpers\Url::to('@web/frontend/web/images/personalized_icon.svg')?>" /></div>
+		<h4 class="name">Personalized Teaching</h4>
+		<p class="detail">-100% Personal attention<br>-Teaching at student's pace</p>
+	</div>
+	<div class="about col-sm-4 pad-tb-20">
+		<div class="icon-box"><img src="<?= yii\helpers\Url::to('@web/frontend/web/images/convinient_icon.svg')?>" /></div>
+		<h4 class="name">Convenient &amp; Safe</h4>
+		<p class="detail">Learn from your home, anytime from any device</p>
+	</div>
+</div>
+		</div>
   </div>
 </section>
+<div class="clearfix" style=""></div> 
+
 
 <div class="targetdiv" id="section-two"></div>
-<section class="courses pad-tb-30" >
-  <div class="container">
-  <div class="col-sm-6">
-        <div class="promo-block">
-            <div class="promo-text">Subjects</div>
-            <div class="center-line"></div>
-        </div>
-        <p class="pad-t-30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an.</p>
-
-        <ul class="list-check row">
-            <li class="col-sm-6"><i class="icon-ok"></i> Physics</li>
-            <li class="col-sm-6"><i class="icon-ok"></i> Chemistry</li>
-            <li class="col-sm-6"><i class="icon-ok"></i> Mathematics</li>
-            <li class="col-sm-6"><i class="icon-ok"></i> Accounts</li>
-            <li class="col-sm-6"><i class="icon-ok"></i> Economics</li>
-            <li class="col-sm-6"><i class="icon-ok"></i> English</li>
-            <li class="col-sm-6"><i class="icon-ok"></i> Punjabi</li>
-        </ul>
-  </div> 
-  <div class="col-sm-6">
-        <div class="promo-block">
-            <div class="promo-text">Programming Subjects</div>
-            <div class="center-line"></div>
-        </div>
-        <div class="row pad-t-30">
-            
-            <div class="col-sm-6"><div class="other-serv">
-                <div class="serv-icon"> <img src="<?= yii\helpers\Url::to('@web/frontend/web/images/c-lan.jpg')?>" alt="C"></div>
-                <div class="serv-name">C</div>
-                <div class="serv-desc hidden"></div>
-            </div></div>
-            <div class="col-sm-6"><div class="other-serv">
-                <div class="serv-icon"> <img src="<?= yii\helpers\Url::to('@web/frontend/web/images/cp.jpg')?>" alt="C++"></div>
-                <div class="serv-name">C++</div>
-                <div class="serv-desc hidden"></div>
-            </div></div>
-            <div class="col-sm-6"><div class="other-serv">
-                <div class="serv-icon"> <img src="<?= yii\helpers\Url::to('@web/frontend/web/images/java.jpg')?>" alt="JAVA"></div>
-                <div class="serv-name">JAVA</div>
-                <div class="serv-desc hidden"></div>
-            </div></div>
-            <div class="col-sm-6"><div class="other-serv">
-                <div class="serv-icon"> <img src="<?= yii\helpers\Url::to('@web/frontend/web/images/php.jpg')?>" alt="PHP"></div>
-                <div class="serv-name">PHP</div>
-                <div class="serv-desc hidden"></div>
-            </div></div>
-            <div class="col-sm-6"><div class="other-serv">
-                <div class="serv-icon"> <img src="<?= yii\helpers\Url::to('@web/frontend/web/images/dbms.jpg')?>" alt="DBMS"></div>
-                <div class="serv-name">DBMS</div>
-                <div class="serv-desc hidden"></div>
-            </div></div>
-            <div class="col-sm-6"><div class="other-serv">
-                <div class="serv-icon"> <img src="<?= yii\helpers\Url::to('@web/frontend/web/images/wd.jpg')?>" alt="Web Designing"></div>
-                <div class="serv-name">Web Designing</div>
-                <div class="serv-desc hidden"></div>
-            </div></div>
-            
-       </div>
-  </div>
-  </div>
+<section id="pricing" class="pad-tb-60">
+    <div class="container">
+		<div class="promo-block pad-b-30">
+			<div class="promo-text"><h2>Our Offerings</h2></div>
+			<div class="center-line"></div>
+		</div>
+                <!-- plan 1 -->
+		<div class="plan-o col-md-4">
+			<div class="plan">
+				<div class="plan-head">
+					<h3>Regular  Tuitions</h3>
+					<div class="sub-heading">Full syllabus coverage through regular classes. Easy monthly installments</div>
+				</div>
+				<ul class="list-check cgreen property true" data-mh="plan">
+					<li><i class="icon-ok"></i> Physics</li>
+					<li><i class="icon-ok"></i> Chemistry</li>
+					<li><i class="icon-ok"></i> Mathematics</li>
+					<li><i class="icon-ok"></i> Accounts</li>
+					<li><i class="icon-ok"></i> Economics</li>
+					<li><i class="icon-ok"></i> English</li>
+					<li><i class="icon-ok"></i> Punjabi</li>
+				</ul>
+				<p class="text-center"><button data-target="#section-five" class="scrollTodiv">Enroll now</button></p>
+			</div>
+		</div>
+		
+		<!-- plan 2 -->
+		<div class="plan-o col-md-4">
+			<div class="plan">
+			   
+				<div class="plan-head">
+					 <h3>Competative Exams</h3> 
+					<div class="sub-heading">Tuitions classes for competative Exams. Regular classes under fixed schedule</div>
+				</div>
+				<ul class="list-check cgreen property true" data-mh="plan">
+					<li><i class="icon-ok"></i> JET</li>
+					<li><i class="icon-ok"></i> Reasoning</li>
+					<li><i class="icon-ok"></i> Ability</li>
+					<li><i class="icon-ok"></i> Aptitude</li>
+					<li><i class="icon-ok"></i> All Banking Exams</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+				</ul>
+				<p class="text-center"><button data-target="#section-five" class="scrollTodiv">Enroll now</button></p>
+			</div>
+		</div>
+		
+		<!-- plan 3 -->
+		<div class="plan-o col-md-4">
+			<div class="plan active">
+				<div class="plan-head">
+					   <h3>Other Courses</h3>
+					<div class="sub-heading">Tuitions for Diplomas, B.Tech/M.Tech, BCA/MCA, B.Com/B.A, LLB Subjects</div>
+				</div>
+			  
+				<ul class="list-check property true" data-mh="plan">
+					<li><img src="<?= yii\helpers\Url::to('@web/frontend/web/images/c-lan.jpg')?>" alt="C">C</li>
+					<li><img src="<?= yii\helpers\Url::to('@web/frontend/web/images/cp.jpg')?>" alt="C++">C++</li>
+					<li><img src="<?= yii\helpers\Url::to('@web/frontend/web/images/java.jpg')?>" alt="JAVA">JAVA</li>
+					<li><img src="<?= yii\helpers\Url::to('@web/frontend/web/images/php.jpg')?>" alt="PHP">PHP</li>
+					<li><img src="<?= yii\helpers\Url::to('@web/frontend/web/images/dbms.jpg')?>" alt="DBMS">DBMS</li>
+					<li><img src="<?= yii\helpers\Url::to('@web/frontend/web/images/wd.jpg')?>" alt="Web Designing">Web Designing</li>
+					<li>&nbsp;</li>
+				</ul>
+				<p class="text-center"><button data-target="#section-five" class="scrollTodiv">Enroll now</button></p>
+			</div>
+		</div>
+    </div>
 </section>
+
 <section id="competativeExams" class="section-cexams">
     <div class="container">
     
@@ -219,6 +230,7 @@ $this->title = 'E2 Matrix Online';
     </div>
 </section>
 
+
 <div class="targetdiv" id="section-four"></div> 
 <section class="prl-1 text-center">
 <div class="prlx">
@@ -228,32 +240,33 @@ $this->title = 'E2 Matrix Online';
             <div class="col-lg-12">
             <div class="testimonials">
 <div id="carousel-testimonials" class="carousel slide">
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-testimonials" data-slide-to="0" class=""></li>
-        <li data-target="#carousel-testimonials" data-slide-to="1" class=""></li>
-        <li data-target="#carousel-testimonials" data-slide-to="2" class=""></li>
-        <li data-target="#carousel-testimonials" data-slide-to="3" class="active"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="item active">
-        <p class="testimonial-quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
-        <p class="testimonial-author">Michael Cornelis</p>
-        </div>
-        <div class="item">
-        <p class="testimonial-quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
-        <p class="testimonial-author">Jean-Noël Chamart</p>
-        </div>
-        <div class="item">
-        <p class="testimonial-quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
-        <p class="testimonial-author">Luke Courtney</p>
-        </div>
-        <div class="item">
-        <p class="testimonial-quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
-        <p class="testimonial-author">Andy Rihn</p>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#carousel-testimonials" data-slide="prev">‹</a>
-    <a class="right carousel-control" href="#carousel-testimonials" data-slide="next">›</a>
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-testimonials" data-slide-to="0" class=""></li>
+		<li data-target="#carousel-testimonials" data-slide-to="1" class=""></li>
+		<li data-target="#carousel-testimonials" data-slide-to="2" class=""></li>
+		<li data-target="#carousel-testimonials" data-slide-to="3" class="active"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active">
+		<p class="testimonial-quote">Teacher is very good and I can now understand him well. i finally found someone who could make me understand!!!! :D</p>
+		<p class="testimonial-author">Anita Saini</p>
+		</div>
+		<div class="item">
+		<p class="testimonial-quote">I always love ur sessions sir bcos u make studies interesting. Awesome class... All the concepts taught in a very easy manner...</p>
+		<p class="testimonial-author">Nisha sood</p>
+		</div>
+		<div class="item">
+		<p class="testimonial-quote">He teaches Algebra in a way we can understand as soon as he tells. thank u sir for explaining so well!! and showing ur concern towards me.</p>
+		<p class="testimonial-author">Sanjeev Rai</p>
+		</div>
+		<div class="item">
+		<p class="testimonial-quote">Awesome class, I have started to love Maths bcos of u! tnx lot Sir!!!!</p>
+		<p class="testimonial-author">Ranvir Singh</p>
+		</div>
+		
+	</div>
+	<a class="left carousel-control" href="#carousel-testimonials" data-slide="prev">‹</a>
+	<a class="right carousel-control" href="#carousel-testimonials" data-slide="next">›</a>
 </div>
             </div>
         </div>

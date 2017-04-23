@@ -27,34 +27,34 @@ WebsiteAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<div class="wrap"> 
-   <div class="se-pre-con" > </div>
-    <nav class="navbar navbar-default nav-top navbar-fixed-top page-navigation" data-spy="affix" data-offset-top="200">
+<div class="wrap">
+<div class="se-pre-con"></div>
 
+<nav class="navbar navbar-default nav-top navbar-fixed-top page-navigation" data-spy="affix" data-offset-top="200">
   <div class="container">
     <div class="navbar-header">
-     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand" href="#"><img src="<?= yii\helpers\Url::to('@web/frontend/web/images/logo-c.png')?>"/></a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+	<div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#home">Home</a></li>
-      <li class=""><a href="#section-one">About Us</a></li>
-      <li class=""><a href="#section-two">Subjects</a></li>
+      <li class="current"><a href="#home">Home</a></li>
+      <li class=""><a href="#section-one">Why Us</a></li>
+      <li class=""><a href="#section-two">Our Offerings</a></li>
       <li><a href="#section-three">Our Achievers</a></li>
       <li><a href="#section-four">Testimonials</a></li-->
       <li><a href="#section-five">Contact Us</a></li>
-       <li><a href="<?= Url::to(['site/signup']) ?>">Signup</a></li>
+	  <li><a href="<?= Url::to(['site/signup']) ?>">Signup</a></li>
     </ul>
-    </div>
+	</div>
   </div>
 </nav>
-
-
+<div class="clearfix" style=""></div>
+ 
     <div>
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],

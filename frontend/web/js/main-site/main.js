@@ -23,3 +23,14 @@ $('#back-to-top').click(function () {
             return false;
     });
 $('#back-to-top').tooltip('show');
+
+$('.scrollTodiv').click(function () {
+			
+			var target = $(this).attr('data-target');
+			var top = $(target).offset().top;
+		
+            $('body,html').animate({
+                scrollTop: top
+            }, 800);
+            return false;
+        });
