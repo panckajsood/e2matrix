@@ -37,12 +37,12 @@ class StudentController extends Controller
         $classes_view = [];
         if(!empty($subjects_array)){
             foreach($subjects_array as $obj_key => $obj_val){ 
-                $subjects_view[$obj_val['id']] = $obj_val['subject'];
+                $subjects_view[$obj_val['subject']] = $obj_val['subject'];
             }
         } 
         if(!empty($classes_array)){
             foreach($classes_array as $obj_key => $obj_val){
-                $classes_view[$obj_val['id']] = $obj_val['class'];
+                $classes_view[$obj_val['class']] = $obj_val['class'];
             }
         } 
         $this->layout = 'main';
