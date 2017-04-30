@@ -18,7 +18,17 @@ $this->title = "Registration";
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
+            <?php 
+	$form = ActiveForm::begin([
+    'id' => 'form-signup',
+    'fieldConfig' => [
+                        'template' => "{input}",
+                        'options' => [
+                            'tag'=>'span'
+                        ]
+    ]
+    ]);
+			//$form = ActiveForm::begin(['id' => 'form-signup']); ?>
 				<div class="box-body row">
 					<div class="form-group col-sm-6">
 					<!--<input type="text" class="form-control" name="txt_fname" placeholder="First Name" value="">-->
@@ -40,10 +50,15 @@ $this->title = "Registration";
 						</label>-->
                                                 <?= $form->field($user_model, 'gender')->radioList(array('M'=>'Male','F'=>'Female')); ?>
 					</div>
-					<div class="col-sm-6">
-					<!--<input type="text" class="form-control" name="txt_dob" placeholder="Date of birth" value="">-->
-                                        <?= $form->field($user_model, 'dob')->textInput(['autofocus' => true,'placeholder' => 'DOB','class' => 'form-control','data-provide'=>'datepicker'])->label(false) ?>
-                                       </div>
+					<div class="form-group col-sm-6">
+						<div class="input-group date">
+							<div class="input-group-addon">
+							<i class="fa fa-calendar"></i>
+							</div>
+						<?= $form->field($user_model, 'dob')->textInput(['autofocus' => true,'placeholder' => 'DOB','class' => 'form-control pull-right','data-provide'=>'datepicker'])->label(false) ?>
+						</div>
+					<!-- /.input group -->
+					</div>
 					<div class="form-group col-sm-6">
 					    <!--<input type="text" class="form-control" name="SignupForm['father_name']" placeholder="Father's name" value="">-->
                                              <?= $form->field($user_model, 'father_name')->textInput(['autofocus' => true,'placeholder' => 'Father Name','class' => 'form-control'])->label(false) ?>
@@ -121,10 +136,10 @@ $this->title = "Registration";
 
 </div>
 <script>
-  jQuery(function () {
+ /* jQuery(function () {
  //Date picker
     jQuery('#datepicker').datepicker({
       autoclose: true
     });
- });
+ });*/
 </script>

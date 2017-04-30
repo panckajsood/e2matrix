@@ -65,6 +65,19 @@ if (Yii::$app->controller->action->id === 'login') {
     <script>
      $.widget.bridge('uibutton', $.ui.button);
     </script>
+<script>
+  jQuery(function () {
+    jQuery("#example1").DataTable();
+    jQuery('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>
     </body>
     </html>
     <?php $this->endPage() ?>
