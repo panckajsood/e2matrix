@@ -64,17 +64,17 @@ $this->title = "Registration";
 						  <div class="input-group-addon">
 							<i class="fa fa-calendar"></i>
 						  </div>
-						<?php /*echo $form->field($user_model, 'joining_date')->textInput(['autofocus' => true,'placeholder' => 'Joining Date','class' => 'form-control pull-right','data-provide'=>'datepicker'])->label(false)*/ ?>
+						<?php echo $form->field($user_model, 'joining_date')->textInput(['autofocus' => true,'placeholder' => 'Joining Date','class' => 'form-control pull-right','data-provide'=>'datepicker'])->label(false) ?>
 
 						</div>
 						<!-- /.input group -->
 					</div>
 					<div class="form-group col-sm-6">
 					<!--<input type="text" class="form-control" name="SignupForm['class']" placeholder="Class" value="">-->
-					<?= $form->field($user_model, 'class')->textInput(['autofocu<s' => true,'placeholder' => 'Class','class' => 'form-control'])->label(false) ?>
+					 <?php echo $form->field($user_model, 'class')->dropDownList($class,['class' => 'form-control'])->label(false); ?>
                                         </div>
 					<div class="form-group col-sm-6">
-                                         <?php echo $form->field($user_model, 'subjects')->dropDownList(['a' => 'Item A', 'b' => 'Item B', 'c' => 'Item C'],['class' => 'form-control'])->label(false); ?>
+                                         <?php echo $form->field($user_model, 'subjects')->dropDownList($subjects,['class' => 'form-control'])->label(false); ?>
 					<!--<input type="text" class="form-control" name="SignupForm['subjects']" placeholder="Subjects" value="">-->
 					</div>
 					<div class="form-group col-sm-6">

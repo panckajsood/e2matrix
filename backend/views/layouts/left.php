@@ -32,6 +32,7 @@
                 'items' => [
                     ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
                     ['label' => 'Register', 'icon' => 'dashboard', 'url' => ['student/register'],],
+                    ['label' => 'Users', 'icon' => 'dashboard', 'url' => ['student/user'],],
                     ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],
                     ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],

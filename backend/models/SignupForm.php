@@ -27,6 +27,7 @@ class SignupForm extends Model
     public $subjects;
     public $class;
     public $other_detail;
+    public $joining_date;
     
 
 
@@ -46,6 +47,8 @@ class SignupForm extends Model
             ['fees', 'integer','min'=>400,'max'=>5000],
             ['email', 'required'],
             ['email', 'email'],
+            ['phone_no','number'],
+            [['dob','joining_date'], 'date', 'format' => 'php:m-d-Y'],
             ['email', 'string', 'max' => 255],
             ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
             ['password', 'required'],
@@ -71,7 +74,7 @@ class SignupForm extends Model
             $user->email = $this->email;
             $user->setPassword($this->password);
             $user->generateAuthKey();
-            $user->save();
+            $user->save(); 
             if($this->updateProfile($user)){
                 $db->commit();  
                 $return = $user;
@@ -114,7 +117,7 @@ class SignupForm extends Model
                     $field_data->updatedby = 1;
                     $field_data->createdby = 1;
                     $field_data->createddate = date("Y-m-d");
-                    if(!$field_data->save()){ 
+                    if(!$field_data->save()){  
                         return false;
                     } 
                 } else{
