@@ -38,7 +38,7 @@ class SignupForm extends Model
         return [
             ['username', 'trim'],
             [['username','first_name','fees','father_name','dob','subjects','school_name',
-             'last_name','class','phone_no','gender'], 'required'],
+             'last_name','class','phone_no','gender', 'joining_date'], 'required'],
             ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
             ['username', 'string', 'min' => 2, 'max' => 255],
             ['address', 'string', 'min' => 2, 'max' => 500],
@@ -86,7 +86,7 @@ class SignupForm extends Model
         return $return;
     }
     
-    public function updateProfile($user = false){ 
+    public function updateProfile($user = false){
     
         /**
          * User Field Data Class Object

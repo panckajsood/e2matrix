@@ -42,7 +42,7 @@ $this->title = "Registration";
 					</div>
 					<div class="col-sm-6">
 					<!--<input type="text" class="form-control" name="txt_dob" placeholder="Date of birth" value="">-->
-                                        <?= $form->field($user_model, 'dob')->textInput(['autofocus' => true,'placeholder' => 'DOB','class' => 'form-control','id'=>'datepicker'])->label(false) ?>
+                                        <?= $form->field($user_model, 'dob')->textInput(['autofocus' => true,'placeholder' => 'DOB','class' => 'form-control','data-provide'=>'datepicker'])->label(false) ?>
                                        </div>
 					<div class="form-group col-sm-6">
 					    <!--<input type="text" class="form-control" name="SignupForm['father_name']" placeholder="Father's name" value="">-->
@@ -60,12 +60,12 @@ $this->title = "Registration";
 					</div>
 					<div class="form-group col-sm-12">
 						<label class="hidden">Joining Date:</label>
-
 						<div class="input-group date">
 						  <div class="input-group-addon">
 							<i class="fa fa-calendar"></i>
 						  </div>
-						  <input type="text" class="form-control pull-right" id="datepicker" placeholder="Other Details">
+						<?php /*echo $form->field($user_model, 'joining_date')->textInput(['autofocus' => true,'placeholder' => 'Joining Date','class' => 'form-control pull-right','data-provide'=>'datepicker'])->label(false)*/ ?>
+
 						</div>
 						<!-- /.input group -->
 					</div>
