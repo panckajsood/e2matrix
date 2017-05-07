@@ -17,7 +17,7 @@ $this->title = "Users";
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Tables</a></li>
-        <li class="active">Data tables</li>
+        <li class="active">Student Listing</li>
       </ol>
     </section>
 
@@ -27,7 +27,7 @@ $this->title = "Users";
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Hover Data Table</h3>
+              <h3 class="box-title">Student Listing</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -39,50 +39,24 @@ $this->title = "Users";
                   <th>Class</th>
                   <th>School Name</th>
                   <th>Joining</th>
+                  <th>Fees</th>
                   <th>action</th>
                 </tr>
                 </thead>
                 <tbody>
+                <?php $i = 0; ?>
+                <?php foreach($students as $student):$i++ ?>
+           
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet Explorer 4.0 </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                  <td>X</td>
-                </tr>
-				<tr>
-                  <td>Trident</td>
-                  <td>Internet Explorer 4.0 </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
+                  <td><?= $i ?></td>
+                  <td><?= $student['name'] ?></td>
+                  <td><?= @$student['dynamiic_data']['class'] ?></td>
+                  <td><?= @$student['dynamiic_data']['school_name'] ?></td>
+                  <td><?= @$student['joining_date'] ?></td>
+                  <td><?= @$student['dynamiic_data']['fees'] ?></td>
                   <td>X</td>
                 </tr>
-				<tr>
-                  <td>Trident</td>
-                  <td>Internet Explorer 4.0 </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                  <td>X</td>
-                </tr>
-				<tr>
-                  <td>Trident</td>
-                  <td>Internet Explorer 4.0 </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                  <td>X</td>
-                </tr>
-				<tr>
-                  <td>Trident</td>
-                  <td>Internet Explorer 4.0 </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                  <td>X</td>
-                </tr>
+		<?php endforeach; ?>
                
                 </tbody>
                 <tfoot>

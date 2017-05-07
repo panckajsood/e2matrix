@@ -5,6 +5,7 @@ use Yii;
 use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
+use common\models\UserFieldData;
 
 
 /**
@@ -46,6 +47,12 @@ class UserFields extends ActiveRecord
         return [
             TimestampBehavior::className(),
         ];
+    }
+    /**
+     * UserFieldData
+     */
+    public function getUserFieldData(){
+        return $this->hasOne(UserFieldData::className(), ['field_id' => 'field_id']);
     }
 
     /**

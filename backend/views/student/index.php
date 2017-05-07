@@ -12,6 +12,7 @@ $this->title = "Registration";
 <section class="content">
 <!-- Nisha Work Space ---->
 <div class="col-sm-8">
+    <?= Alert::widget() ?>
 <div class="box box-primary col-sm-8">
             <div class="box-header with-border">
               <h3 class="box-title">Student Registration</h3>
@@ -55,7 +56,7 @@ $this->title = "Registration";
 							<div class="input-group-addon">
 							<i class="fa fa-calendar"></i>
 							</div>
-						<?= $form->field($user_model, 'dob')->textInput(['autofocus' => true,'placeholder' => 'DOB','class' => 'form-control pull-right','data-provide'=>'datepicker'])->label(false) ?>
+						<?= $form->field($user_model, 'dob')->textInput(['autofocus' => true,'placeholder' => 'DOB','class' => 'form-control pull-right','data-date-format' => 'yyyy-mm-dd','data-provide'=>'datepicker'])->label(false) ?>
 						</div>
 					<!-- /.input group -->
 					</div>
@@ -79,7 +80,7 @@ $this->title = "Registration";
 						  <div class="input-group-addon">
 							<i class="fa fa-calendar"></i>
 						  </div>
-						<?php echo $form->field($user_model, 'joining_date')->textInput(['autofocus' => true,'placeholder' => 'Joining Date','class' => 'form-control pull-right','data-provide'=>'datepicker'])->label(false) ?>
+						<?php echo $form->field($user_model, 'joining_date')->textInput(['autofocus' => true,'placeholder' => 'Joining Date','data-date-format' => 'yyyy-mm-dd','class' => 'form-control pull-right','data-provide'=>'datepicker'])->label(false) ?>
 
 						</div>
 						<!-- /.input group -->
